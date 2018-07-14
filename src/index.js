@@ -1,11 +1,8 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { test1, test2 } from './lib'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-render(
-	<div>
-		{test1}
-		{test2}
-	</div>,
-	document.getElementById('react-container')
-)
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
